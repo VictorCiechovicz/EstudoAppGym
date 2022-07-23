@@ -1,10 +1,19 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+
+import TelaInicial from './Componentes/TelaInicial/index';
+import TelaLogin from './Componentes/TelaLogin/index';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View>
-      <Text>oi mundo</Text>
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={TelaInicial} />
+        <Stack.Screen name="Login" component={TelaLogin} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
