@@ -13,7 +13,7 @@ export default function TelaTreinos(props) {
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('TreinoSegunda');
         }}>
         <Text style={estilo.textobotao}>Segunda-Feira</Text>
       </Pressable>
