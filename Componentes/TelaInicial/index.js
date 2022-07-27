@@ -11,12 +11,13 @@ export default function TelaInicial(props) {
         <Text style={estilo.titulo}>Titulo</Text>
         <Text style={estilo.descricao}>Descricao aqui</Text>
       </View>
+      
       <Pressable
         style={estilo.botao}
         onPress={() => {
           props.navigation.navigate('Login');
         }}>
-        clique aqui
+        <Text>aqui</Text>
       </Pressable>
     </ImageBackground>
   );
