@@ -8,16 +8,18 @@ export default function TelaInicial(props) {
   return (
     <ImageBackground style={estilo.fundo} source={Fundo1}>
       <View style={estilo.boxtexto}>
-        <Text style={estilo.titulo}>Titulo</Text>
-        <Text style={estilo.descricao}>Descricao aqui</Text>
+        <Text style={estilo.titulo}>Bem vindo ao TreinoAqui</Text>
+        <Text style={estilo.descricao}>
+          Aplicativo feito para gerenciar de forma pratica sua ficha de treino.
+        </Text>
       </View>
-      
+
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Login');
+          props.navigation.navigate('Treinos');
         }}>
-        <Text>aqui</Text>
+        <Text style={estilo.textobotao}>Começar</Text>
       </Pressable>
     </ImageBackground>
   );
