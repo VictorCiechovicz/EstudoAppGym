@@ -1,10 +1,12 @@
 import React from 'react';
-import {Pressable, Text, View} from 'react-native';
+import {ImageBackground, Pressable, Text, View} from 'react-native';
 import estilo from './estilo';
+
+import Fundo from '../../assets/Treinos/treinos.png';
 
 export default function TelaTreinos(props) {
   return (
-    <View style={estilo.container}>
+    <ImageBackground style={estilo.fundo} source={Fundo}>
       <View style={estilo.boxtexto}>
         <Text style={estilo.titulo}>Treinos</Text>
       </View>
@@ -43,6 +45,6 @@ export default function TelaTreinos(props) {
         }}>
         <Text style={estilo.textobotao}>Sexta-Feira</Text>
       </Pressable>
-    </View>
+    </ImageBackground>
   );
 }

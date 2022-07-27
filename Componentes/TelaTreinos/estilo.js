@@ -1,30 +1,36 @@
 import {StyleSheet} from 'react-native';
 
 const estilo = StyleSheet.create({
-  container: {
+  fundo: {
     flex: 1,
-    backgroundColor: '#fff',
+
     alignItems: 'center',
+    justifyContent: 'center',
   },
+
   boxtexto: {
-    borderWidth: 1,
     marginTop: 20,
-    marginBottom: 20,
+    marginBottom: 30,
   },
   titulo: {
     fontSize: 30,
-
+    color: '#fff',
     fontWeight: 'bold',
   },
 
   botao: {
     width: 200,
-    height: 50,
+    height: 60,
     backgroundColor: '#fff',
-    borderWidth: 1,
-    marginBottom: 10,
+
+    marginBottom: 30,
     justifyContent: 'center',
     alignItems: 'center',
+    borderRadius: 5,
+  },
+  textobotao: {
+    fontSize: 16,
+    color: '#000',
   },
 });
 export default estilo;
