@@ -47,7 +47,7 @@ const treinos = [
 export default function TreinoTerca() {
   return (
     <View style={estilo.container}>
-      <Text style={estilo.titulo}>Segunda-Feira</Text>
+      <Text style={estilo.titulo}>Terça-Feira</Text>
 
       <FlatList
         data={treinos}

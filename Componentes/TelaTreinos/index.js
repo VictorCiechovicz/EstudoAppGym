@@ -20,28 +20,28 @@ export default function TelaTreinos(props) {
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('TreinoTerca');
         }}>
         <Text style={estilo.textobotao}>Terça-Feira</Text>
       </Pressable>
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('TreinoQuarta');
         }}>
         <Text style={estilo.textobotao}>Quarta-Feira</Text>
       </Pressable>
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('TreinoQuinta');
         }}>
         <Text style={estilo.textobotao}>Quinta-Feira</Text>
       </Pressable>
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('TreinoSexta');
         }}>
         <Text style={estilo.textobotao}>Sexta-Feira</Text>
       </Pressable>
