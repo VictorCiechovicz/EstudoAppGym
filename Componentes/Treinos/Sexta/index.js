@@ -1,5 +1,6 @@
 import React from 'react';
-import {ImageBackground, FlatList, Text, View, ScrollView} from 'react-native';
+import {FlatList, Text, View} from 'react-native';
+
 import estilo from './estilo';
 
 const treinos = [
@@ -44,6 +45,7 @@ const treinos = [
     quant: ['3X 20Rep'],
   },
 ];
+
 export default function TreinoSexta() {
   return (
     <View style={estilo.container}>
