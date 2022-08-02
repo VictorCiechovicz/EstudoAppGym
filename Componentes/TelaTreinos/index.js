@@ -5,9 +5,6 @@ import estilo from './estilo';
 import Fundo from '../../assets/Treinos/treinos.png';
 
 export default function TelaTreinos(props) {
-
- 
-
   return (
     <ImageBackground style={estilo.fundo} source={Fundo}>
       <View style={estilo.boxtexto}>

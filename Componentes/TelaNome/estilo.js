@@ -13,7 +13,7 @@ const estilo = StyleSheet.create({
     marginBottom: 10,
   },
   titulo: {
-    fontSize: 15,
+    fontSize: 20,
     color: '#fff',
     fontWeight: 'bold',
   },

@@ -9,7 +9,7 @@ export default function TelaNome(props) {
   return (
     <ImageBackground style={estilo.fundo} source={Fundo}>
       <View style={estilo.boxtexto}>
-        <Text style={estilo.titulo}>Nome</Text>
+        <Text style={estilo.titulo}>Digite seu Nome</Text>
       </View>
       <TextInput
         style={estilo.caixatexto}
