@@ -1,5 +1,12 @@
-import React from 'react';
-import {ImageBackground, FlatList, Text, View, ScrollView} from 'react-native';
+import React, {useState} from 'react';
+import {
+  ImageBackground,
+  FlatList,
+  Text,
+  View,
+  ScrollView,
+  Switch,
+} from 'react-native';
 import estilo from './estilo';
 
 const treinos = [
@@ -45,6 +52,9 @@ const treinos = [
   },
 ];
 export default function TreinoSegunda() {
+  const [check, setCheck] = useState(false);
+  const toggleCheck = () => setCheck(!check);
+
   return (
     <View style={estilo.container}>
       <Text style={estilo.titulo}>Segunda-Feira</Text>
@@ -55,6 +65,7 @@ export default function TreinoSegunda() {
         renderItem={({item}) => (
           <View style={estilo.lista}>
             <Text style={estilo.descricaolista}>
+              <Switch value={check} onValueChange={toggleCheck} />
               <Text style={estilo.quantidadelista}>{item.quant} </Text>
               {item.desc}
             </Text>

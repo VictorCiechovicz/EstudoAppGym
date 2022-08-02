@@ -17,7 +17,7 @@ export default function TelaInicial(props) {
       <Pressable
         style={estilo.botao}
         onPress={() => {
-          props.navigation.navigate('Treinos');
+          props.navigation.navigate('Nome');
         }}>
         <Text style={estilo.textobotao}>Começar</Text>
       </Pressable>

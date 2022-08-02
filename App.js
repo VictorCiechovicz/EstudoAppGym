@@ -3,6 +3,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 import TelaInicial from './Componentes/TelaInicial/index';
+import TelaNome from './Componentes/TelaNome/index';
 import TelaTreinos from './Componentes/TelaTreinos/index';
 import TelaTreinoSegunda from './Componentes/Treinos/Segunda/index';
 import TelaTreinoTerca from './Componentes/Treinos/Terca/index';
@@ -20,6 +21,7 @@ export default function App() {
           headerShown: false,
         }}>
         <Stack.Screen name="Inicio" component={TelaInicial} />
+        <Stack.Screen name="Nome" component={TelaNome} />
         <Stack.Screen name="Treinos" component={TelaTreinos} />
         <Stack.Screen name="TreinoSegunda" component={TelaTreinoSegunda} />
         <Stack.Screen name="TreinoTerca" component={TelaTreinoTerca} />
