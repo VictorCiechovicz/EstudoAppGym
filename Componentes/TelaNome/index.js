@@ -1,11 +1,20 @@
 import React, {useState} from 'react';
-import {ImageBackground, Pressable, Text, TextInput, View} from 'react-native';
+import {
+  ImageBackground,
+  Pressable,
+  Text,
+  TextInput,
+  View,
+  Modal,
+} from 'react-native';
 import estilo from './estilo';
 
 import Fundo from '../../assets/PaginaNome/Nome.png';
 
 export default function TelaNome(props) {
   const [nome, setNome] = useState('');
+  const [visibilidade, setVisibilidade] = useState(false);
+
   return (
     <ImageBackground style={estilo.fundo} source={Fundo}>
       <View style={estilo.boxtexto}>
@@ -23,6 +32,24 @@ export default function TelaNome(props) {
         }}>
         <Text style={estilo.textobotao}>Começar</Text>
       </Pressable>
+      <Pressable
+        style={estilo.botaoinfomacao}
+        onPress={() => setVisibilidade(!visibilidade)}>
+        <Text style={estilo.textobotaoinformacao}>Informações</Text>
+      </Pressable>
+
+      <Modal animationType="fade" transparent={true} visible={visibilidade}>
+        <View style={estilo.modalcontainer}>
+          <View style={estilo.modal}>
+            <Text style={estilo.textomodal}>Informações aqui</Text>
+            <Pressable
+              style={estilo.botaoinfomacao}
+              onPress={() => setVisibilidade(!visibilidade)}>
+              <Text style={estilo.textobotaoinformacao}>Fechar</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
     </ImageBackground>
   );
 }

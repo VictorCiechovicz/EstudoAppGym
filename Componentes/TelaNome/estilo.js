@@ -22,8 +22,7 @@ const estilo = StyleSheet.create({
     width: 200,
     height: 40,
     backgroundColor: '#fff',
-
-    marginBottom: 30,
+    marginBottom: 10,
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 5,
@@ -42,6 +41,35 @@ const estilo = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 4,
     border: 'none',
+  },
+  botaoinfomacao: {
+    width: 100,
+    height: 20,
+    backgroundColor: '#fff',
+    marginBottom: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+  textobotaoinformacao: {
+    fontSize: 10,
+    color: '#000',
+  },
+  modalcontainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modal: {
+    width: 200,
+    height: 200,
+    borderRadius: 5,
+    backgroundColor: '#000',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textomodal: {
+    color: '#fff',
   },
 });
 export default estilo;
